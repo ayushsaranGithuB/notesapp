@@ -8,12 +8,13 @@ export default function Note({ postData }) {
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <main>
+            <main className='singleNote'>
                 <article className='note'>
-                    <h1 className="headingXl">{postData.title}</h1>
                     <div className="noteDate">
                         {postData.date}
                     </div>
+                    <h1 className="headingXl">{postData.title}</h1>
+
                     <div className='noteText' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 </article>
             </main>
