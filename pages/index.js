@@ -12,12 +12,12 @@ export default function Home({ allPostsData }) {
       <main className='homePage' >
         <h1>Recent Notes</h1>
         <ul className='notesList'>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, excerpt }) => (
             <div key={id} className="card">
               <div class="noteCard">
                 <h4 class="noteTitle"><Link href={`/notes/${id}`}>{title}</Link></h4>
                 <p class="noteDate">{date}</p>
-                <p class="noteText">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+                <p class="noteText">{excerpt}</p>
               </div>
             </div>
           ))}

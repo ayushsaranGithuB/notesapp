@@ -1,6 +1,7 @@
 ---
 title: 'Dummy Data for Web Projects'
 date: '25/4/23'
+excerpt: 'There are some great Free Resources for Generating Realistic Data to use for testing.'
 ---
 
 There are some great Free Resources for Generating Realistic Data to use for API testing and to populate static designs. 
