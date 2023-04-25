@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../components/notes'
 import Head from 'next/head'
@@ -17,6 +18,9 @@ export default function Note({ postData }) {
 
                     <div className='noteText' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 </article>
+                <p className='center'>
+                    <Link className='returnHomeLink' href='/'>&laquo; Back to All Posts</Link>
+                </p>
             </main>
         </>
     )

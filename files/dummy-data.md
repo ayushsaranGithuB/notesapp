@@ -11,7 +11,7 @@ Faker is a Python library that helps you generate fake data.
 
 Furthermore, it has its own pytest plugin, which provides a faker fixture you can use in your tests.
 
-[Faker GitHub](https://github.com/joke2k/faker)
+[GitHub](https://github.com/joke2k/faker)
 
 
 # Mockaroo
@@ -21,5 +21,10 @@ You can also construct and save schemas for later use.
 
 *BONUS* Using the Mockaroo docker image, you can create and deploy a mock APIs to test with.
 
-[Website](http://www.mockaroo.com/) | [GitHub](https://github.com/mockaroo/)
+[Mockaroo](http://www.mockaroo.com/) | [GitHub](https://github.com/mockaroo/)
 
+# The JSON Schema Faker 
+
+Generate fake data that conforms to a schema you design via a user interface. Instead of manually writing the schema, you can select and build upon the list of sample schemas already prepared.
+
+[JSON Schema Faker](https://json-schema-faker.js.org/) | [GitHub](https://github.com/json-schema-faker/json-schema-faker)
