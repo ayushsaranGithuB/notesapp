@@ -22,18 +22,15 @@ export default function Home({ allPostsData }) {
         <main>
           <section className="postGrid">
             {allPostsData.map(({ id, date, title, category }) => (
-              
-              <Link href={`/notes/${id}`}>
-              <div  key={id} className="link">
-                <p className={`category category-${category.toLowerCase()}`}>#{category}</p>
-                 <p className="title">{title}</p>
-                 <p className="url">
-                   <a href="/">
+              <div key={id} className="link">
+              <Link key={id} href={`/notes/${id}`}>              
+                <span className={`category category-${category.toLowerCase()}`}>#{category}</span>
+                 <span className="title">{title}</span>
+                 <span className="url">
                    {date}
-                   </a>
-                 </p>
-                 </div>
+                 </span>
                  </Link>
+                 </div>
             ))}
          
           </section>

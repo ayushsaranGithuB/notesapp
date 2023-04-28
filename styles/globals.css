@@ -69,15 +69,16 @@ h1.pageTitle {
   left: -1px;
 }
 
-.link p.title {
+.link span.title {
   font-size: 22px;
   font-family: var(--fontPrimary);
   margin-bottom: 5px;
   color: var(--foreground);
   padding: 4px 8px 4px 4px;
   margin-left: -4px;
+  display: block;
 }
-p.title:hover {
+span.title:hover {
   transition: .6s;
   background-color: var(--highlightColor);
   color: var(--background);
@@ -97,13 +98,11 @@ a:hover {
 }
 
 
-p.url {
+span.url {
   margin: 0 0 20px;
   padding: 0;
   line-height: 10px;
-}
-
-p.url a {
+  display: block;
   font-family: monospace;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -111,11 +110,11 @@ p.url a {
   word-wrap: break-word;
 }
 
-p.description {
+span.description {
   margin: 0;
 }
 
-p.category {
+span.category {
   font-size: 12px;
   background-color: var(--foreground);
   padding: 2px 5px;
@@ -126,22 +125,22 @@ p.category {
   font-family: var(--fontSecondary);
 }
 
-.postGrid p.category {
+.postGrid span.category {
   font-size: 12px;
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 10px;
 }
 
-p.category-css {
+span.category-css {
   background-color: #e6bf23;
 }
 
-p.category-php {
+span.category-php {
   background-color: #24c7ecba;
 }
 
-p.category-js {
+span.category-js {
   background-color: #f42c79b0;
 }
 
