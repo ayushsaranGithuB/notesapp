@@ -256,3 +256,13 @@ nav ul li a:hover {
   align-items: baseline;
   font-family: var(--fontMono);
 }
+
+.errorPage{
+  text-align: center;
+  margin: 100px;
+    padding: 100px;
+}
+
+.errorPage h1{
+  font-size: 100px;
+}
