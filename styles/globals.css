@@ -4,10 +4,10 @@
   --linkColor: #8ee244;
   --highlightColor: #c4e835;
   --fontPrimary: 'Share Tech Mono', monospace;
-        --fontSecondary: 'Roboto Slab', monospace;
-        --fontMono: 'Silkscreen', monospace;
+  --fontSecondary: 'Roboto Slab', monospace;
+  --fontMono: 'Silkscreen', monospace;
   --backgroundDarker: #1a201d6d;
-        --backgroundLighter: #46524cc3;
+  --backgroundLighter: #46524cc3;
 }
 
 body {
@@ -24,8 +24,12 @@ body {
   border-radius: 3px;
   margin: 15px;
   padding: 40px;
-        position: relative;
-        max-width: 1580px;
+  position: relative;
+  max-width: 1580px;
+}
+
+header {
+  z-index: 1;
 }
 
 h1.pageTitle {
@@ -33,7 +37,7 @@ h1.pageTitle {
   font-size: 7rem;
   width: 5rem;
   line-height: 1em;
-        margin: 50px 0 150px 0;
+  margin: 50px 0 150px 0;
 }
 
 
@@ -50,26 +54,25 @@ h1.pageTitle {
   max-width: 200px;
   aspect-ratio: 1/1;
   background-color: var(--backgroundDarker);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        transition: 0.8s;
-        zoom: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: 0.8s;
+  zoom: 1;
 }
 
-    .link:hover{
-        background-color: var(--backgroundLighter);
-        border-color: #AAA;
-        cursor: pointer;
-        top: -1px;
-        left: -1px;
-    }
+.link:hover {
+  background-color: var(--backgroundLighter);
+  border-color: #AAA;
+  top: -1px;
+  left: -1px;
+}
 
 .link p.title {
   font-size: 16px;
   font-family: var(--fontPrimary);
-        margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -97,126 +100,163 @@ p.title a:hover {
   color: var(--background);
 }
 
-    p.url{
-        margin: 0 0 20px;
-        padding: 0;
-        line-height: 10px;
-    }
-
-    p.url a{
-        font-family: monospace;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 10px;
-        word-wrap: break-word;
-    }
-
-    p.description{
-        margin: 0;
-    }
-
-p.category {
-        font-size: 12px;
-        position: absolute;
-        top: 0px;
-        left: 10px;
-        background-color:var(--foreground);
-        padding: 2px 5px;
-        color: var(--background);
-        font-weight: bold;
-        text-transform: uppercase;
+p.url {
+  margin: 0 0 20px;
+  padding: 0;
+  line-height: 10px;
 }
 
-    p.category-css{
-        background-color:#e6bf23;
-    }
-    p.category-php{
-        background-color:#24c7ecba;
-    }
-    p.category-js{
-        background-color:#f42c79b0;
-    }
+p.url a {
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  word-wrap: break-word;
+}
 
-    /* -- Footer Styles */
-      footer{
-        text-align: center;
-        font-family: var(--fontMono);
-        font-size: 12px;
-        margin: 50px auto;
-        opacity: .5;
-      }
+p.description {
+  margin: 0;
+}
 
-      footer:hover{
-        opacity: 1;
-      }
+p.category {
+  font-size: 12px;
+  background-color: var(--foreground);
+  padding: 2px 5px;
+  color: var(--background);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--fontSecondary);
+}
+
+.postGrid p.category {
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+p.category-css {
+  background-color: #e6bf23;
+}
+
+p.category-php {
+  background-color: #24c7ecba;
+}
+
+p.category-js {
+  background-color: #f42c79b0;
+}
+
+/* -- Footer Styles */
+footer {
+  text-align: center;
+  font-family: var(--fontMono);
+  font-size: 12px;
+  margin: 50px auto;
+  opacity: .5;
+}
+
+footer:hover {
+  opacity: 1;
+}
 
 
-    /* -- Navigation Styles */
+/* -- Navigation Styles */
 
-    nav{
-        position: absolute;
-        top: 130px;
-        right: 100px;
-        font-family: var(--fontMono);
-    }
+nav {
+  position: absolute;
+  top: 130px;
+  right: 100px;
+  font-family: var(--fontMono);
+  z-index: 2;
+}
 
-        nav ul{
-            margin: 0;
-            padding: 0;
-        }
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 
-            nav ul li{
-                list-style: none;
-                margin: 0 0 10px;
-                text-align: right;
-            }
+nav ul li {
+  list-style: none;
+  margin: 0 0 10px;
+  text-align: right;
+}
 
-                nav ul li a{
-                    padding: 4px 8px;
-                }
+nav ul li a {
+  padding: 4px 8px;
+}
 
-                nav ul li a.selected{
-                    background-color: var(--linkColor);
-                    color: var(--background);                        
-                }
-                nav ul li a:hover:before{
-                    content: '> ';
-                }
+nav ul li a.selected {
+  background-color: var(--linkColor);
+  color: var(--background);
+}
 
-                nav ul li a:hover{
-                    background-color: var(--highlightColor);
-                    color: var(--background);
-                }
+nav ul li a.selected:before,
+nav ul li a:hover:before {
+  content: '> ';
+}
+
+nav ul li a:hover {
+  background-color: var(--highlightColor);
+  color: var(--background);
+}
 
 @media only screen and (min-width: 1400px) {
   body {
     font-size: 20px;
   }
 
-        .container {
-            margin: 50px auto;
-            padding: 60px;
-        }
+  .container {
+    margin: 50px auto;
+    padding: 60px;
+  }
 
   h1.pageTitle {
     font-size: 160px;
     line-height: 140px;
   }
 
-  .link {    
-            max-width: 250px;
-            font-size: 16px;
-            padding: 20px 30px;
+  .link {
+    max-width: 250px;
+    font-size: 16px;
+    padding: 20px 30px;
   }
 
   .link p.title {
     font-size: 20px;
   }
 
-        p.keywords{
-            font-size:12px;
-        }
+  p.keywords {
+    font-size: 12px;
+  }
 
-       
 
-    }
+
+}
+
+/* -- Single Note */
+
+.singleNote {
+  padding: 100px;
+}
+
+.singleNote h1.pageTitle {
+  font-size: 4rem;
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+.noteText {
+  font-size: 18px;
+  width: 80%;
+  line-height: 26px;
+}
+
+.singleNote .note .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: baseline;
+  font-family: var(--fontMono);
+}

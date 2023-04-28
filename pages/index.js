@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { getSortedPostsData } from '../components/notes'
 import Link from 'next/link'
+import NavBar from "@/components/navbar";
 
 export default function Home({ allPostsData }) {
   return (
@@ -17,10 +18,9 @@ export default function Home({ allPostsData }) {
             DEV NOTES
           </h1>
         </header>
-        
+        <NavBar current='home' />
         <main>
           <section className="postGrid">
-
             {allPostsData.map(({ id, date, title, category }) => (
               <div  key={id} className="link">
                 <p className={`category category-${category.toLowerCase()}`}>#{category}</p>
