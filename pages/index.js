@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../components/notes'
 import Link from 'next/link'
 
@@ -8,21 +7,38 @@ export default function Home({ allPostsData }) {
     <>
       <Head>
         <title>Dev.Notes - Ayush Saran's MicroBlog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+	      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Share+Tech+Mono&family=Silkscreen&display=swap" rel="stylesheet" />
       </Head>
-      <main className='homePage' >
-        <h1>Recent Notes</h1>
-        <ul className='notesList'>
-          {allPostsData.map(({ id, date, title, excerpt }) => (
-            <div key={id} className="card">
-              <div class="noteCard">
-                <h4 class="noteTitle"><Link href={`/notes/${id}`}>{title}</Link></h4>
-                <p class="noteDate">{date}</p>
-                <p class="noteText">{excerpt}</p>
-              </div>
-            </div>
-          ))}
-        </ul>
-      </main>
+      <div className="container">
+        <header>
+          <h1 className="pageTitle">
+            DEV NOTES
+          </h1>
+        </header>
+        
+        <main>
+          <section className="postGrid">
+
+            {allPostsData.map(({ id, date, title, category }) => (
+              <div  key={id} className="link">
+                <p className={`category category-${category.toLowerCase()}`}>#{category}</p>
+                 <p className="title"><Link href={`/notes/${id}`}>{title}</Link></p>
+                 <p className="url">
+                   <a href="/">
+                   {date}
+                   </a>
+                 </p>
+                 </div>
+            ))}
+         
+          </section>
+        </main>
+      </div>
+
+
+        
     </>
   )
 }

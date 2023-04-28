@@ -4,13 +4,13 @@ import Link from "next/link";
 const NavBar = () => {
     return (
         <nav>
-            <div className="wrapper">
-                <div className="logo">
-                    <Link href="/">dev.Notes</Link>
-                </div>
-                {/* <Link href="/notes">All Notes</Link>
-                <Link href="/search">Search</Link> */}
-            </div>
+          <ul>
+            <li><a href="/" className="selected">&gt; ALL</a></li>
+            <li><a href="/">CSS</a></li>
+            <li><a href="/">JS</a></li>
+            <li><a href="/">PHP</a></li>
+            <li><a href="/">AI</a></li>
+          </ul>
         </nav>
 
     );

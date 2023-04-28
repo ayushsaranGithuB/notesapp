@@ -1,7 +1,7 @@
 ---
 title: 'Setting up GitHub Pages with Jekyll'
 date: '22/4/23'
-excerpt: 'Using Jekyll, a popular static site generator, GitHub Pages will automatically build and host a static website for you.'
+category: 'Js'
 ---
 
 Using Jekyll, a popular static site generator, GitHub Pages will automatically build and host a static website for you.
