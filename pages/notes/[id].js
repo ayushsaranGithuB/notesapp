@@ -22,7 +22,9 @@ export default function Note({ postData }) {
                 </header>
                 <article className='note'>
                     <div className="meta">
-                        <p className='date'>{postData.date}</p><p>|</p><p className={`category category-${postData.category.toLowerCase()}`}>#{postData.category}</p>
+                        <p className='date'>{postData.date}</p>
+                        <p>|</p>
+                        <span className={`category category-${postData.category.toLowerCase()}`}>#{postData.category}</span>
                     </div>
                     <div className='noteText' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 </article>                
