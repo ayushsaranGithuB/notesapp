@@ -51,7 +51,7 @@ h1.pageTitle {
   border: 1px solid #666;
   padding: 30px;
   overflow: hidden;
-  max-width: 200px;
+  width: 200px;
   aspect-ratio: 1/1;
   background-color: var(--backgroundDarker);
   display: flex;
