@@ -2,8 +2,9 @@ import Head from 'next/head'
 import { getPostbyTag, getAllCategoryIds } from '@/components/notes'
 import Link from 'next/link'
 import NavBar from "@/components/navbar";
+import { useState } from 'react';
 
-export default function Category({ allPostsData }) {
+export default function Category({ allPostsData,selectedCat }) {
   return (
     <>
       <Head>
@@ -15,10 +16,10 @@ export default function Category({ allPostsData }) {
       <div className="container">
         <header>
           <h1 className="pageTitle">
-            DEV NOTES
+            #{selectedCat.toUpperCase()}
           </h1>
         </header>
-        <NavBar current='home' />
+        <NavBar current={selectedCat} />
         <main>
           <section className="postGrid">
             {allPostsData.map(({ id, date, title, category }) => (
@@ -53,9 +54,11 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps({ params }) {
     const allPostsData = await getPostbyTag(params.category)
+    let selectedCat = params.category;
     return {
         props: {
-            allPostsData
+            allPostsData,
+            selectedCat
         }
     }
 }

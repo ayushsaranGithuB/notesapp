@@ -69,7 +69,7 @@ export async function getPostData(id) {
 }
 
 export function getAllCategoryIds() {
-    let categoriesArray = ['php','css','js','api']
+    let categoriesArray = ['php','css','js','tools']
     return categoriesArray.map(e => {
         return {
             params: {
