@@ -33,7 +33,7 @@ header {
 }
 
 h1.pageTitle {
-  font-family: var(--fontPrimary);
+  font-family: var(--fontMono);
   font-size: 7rem;
   width: 5rem;
   line-height: 1em;

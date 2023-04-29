@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    h1.pageTitle {  
+    font-size: 3rem;
+    width: auto;
+    margin: 50px 0 150px 0;
+    }
+
+    nav{
+            top: 20px;
+    right: 20px;
+    }
+
+    .link{
+        width: 250px;
+    }
+
+    .link span.title {
+        font-size: 32px;
+    }
+
+}
