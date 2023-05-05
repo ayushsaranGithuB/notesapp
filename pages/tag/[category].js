@@ -5,6 +5,7 @@ import NavBar from "@/components/navbar";
 import { useState } from 'react';
 
 export default function Category({ allPostsData,selectedCat }) {
+  if(selectedCat){
   return (
     <>
       <Head>
@@ -41,7 +42,13 @@ export default function Category({ allPostsData,selectedCat }) {
 
         
     </>
-  )
+  )}else{
+    return (
+    <>
+    <h1 className='error'>No Posts to Show</h1>
+    </>
+    );
+  }
 }
 
 
