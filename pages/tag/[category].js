@@ -49,7 +49,7 @@ export async function getStaticPaths() {
   const paths = getAllCategoryIds()
   return {
       paths,
-      fallback: false
+      fallback: true
   }
 }
 export async function getStaticProps({ params }) {

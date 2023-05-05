@@ -6,10 +6,10 @@ const NavBar = ({current}) => {
         <nav>
           <ul>
             <li><a href="/" className={(current == 'home') ? "selected" : ''}> ALL</a></li>
-            <li><a href="/tag/css" className={(current == 'css') ? "selected" : ''}>CSS</a></li>
-            <li><a href="/tag/js" className={(current == 'js') ? "selected" : ''}>JS</a></li>
-            <li><a href="/tag/php" className={(current == 'php') ? "selected" : ''}>PHP</a></li>
-            <li><a href="/tag/tools" className={(current == 'tools') ? "selected" : ''}>Tools</a></li>
+            <li><a href="/tag/ui" className={(current == 'ui') ? "selected" : ''}>UI</a></li>
+            <li><a href="/tag/fullstack" className={(current == 'fullstack') ? "selected" : ''}>fullstack</a></li>
+            <li><a href="/tag/js" className={(current == 'php') ? "selected" : ''}>Js</a></li>
+            <li><a href="/tag/codep" className={(current == 'codep') ? "selected" : ''}>Codepen</a></li>
           </ul>
         </nav>
 

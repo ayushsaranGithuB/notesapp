@@ -7,7 +7,7 @@ export default function Home({ allPostsData }) {
   return (
     <>
       <Head>
-        <title>Dev.Notes - Ayush Saran's MicroBlog</title>
+        <title>Sandbox - Ayush Saran's Web Experiments</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 	      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Share+Tech+Mono&family=Silkscreen&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
       <div className="container">
         <header>
           <h1 className="pageTitle">
-            DEV NOTES
+            SAND <b>BOX</b>
           </h1>
         </header>
         <NavBar current='home' />
