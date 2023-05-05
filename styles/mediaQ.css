@@ -1,12 +1,22 @@
 @media (max-width: 768px) {
 
+    .container{
+        min-width:330px
+    }
+
     h1.pageTitle {  
     font-size: 3rem;
     width: auto;
-    margin: 50px 110px 150px 0;
+    margin: 20px 110px 100px 0;
     }
 
-
+    img.sandbox{
+        width: clamp(60px,5rem,200px);
+        border-width: 6px;
+        margin-top: 1.5em;
+        margin-right: 15px;  
+        border-radius: 3px;
+    }
 
     nav{
             top: 20px;
@@ -14,11 +24,23 @@
     }
 
     .link{
-        width: 250px;
+        width: 50%;
     }
 
     .link span.title {
         font-size: 32px;
     }
 
+    header {
+        flex-wrap: wrap;
+    }
+
 }
+
+
+
+@media only screen and (min-width: 1400px) {
+
+  
+  
+  }

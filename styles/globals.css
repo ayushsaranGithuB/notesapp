@@ -32,17 +32,30 @@ body {
 
 header {
   z-index: 1;
+  display: flex;
+  align-items: flex-start;
 }
 
 h1.pageTitle {
   font-family: var(--fontMono);
-  font-size: 7rem;
-  width: 5rem;
+  font-size: min(5rem + 1vw,7rem);
+    max-width: 30rem;
   line-height: 1em;
-  margin: 50px 0 150px 0;
+  margin: 50px 0 150px 20px;  
 }
   h1.pageTitle b{
     font-size: 1.3em;
+  }
+
+  img.sandbox{
+    display: block;
+    width: clamp(60px,15rem,200px);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: 9px solid #fff;
+    padding: 1em;
+    margin-top: 72px;  
+    border-radius: 3px;
   }
 
 .postGrid {
@@ -203,38 +216,6 @@ nav ul li a:hover {
   color: var(--background);
 }
 
-@media only screen and (min-width: 1400px) {
-  body {
-    font-size: 20px;
-  }
-
-  .container {
-    margin: 50px auto;
-    padding: 60px;
-  }
-
-  h1.pageTitle {
-    font-size: 160px;
-    line-height: 140px;
-  }
-
-  .link {
-    max-width: 250px;
-    font-size: 16px;
-    padding: 20px 30px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .keywords {
-    font-size: 12px;
-  }
-
-
-
-}
 
 /* -- Single Note */
 
@@ -269,5 +250,5 @@ nav ul li a:hover {
 }
 
 .errorPage h1{
-  font-size: 100px;
+  font-size: 12em;
 }

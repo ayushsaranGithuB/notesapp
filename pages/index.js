@@ -14,8 +14,9 @@ export default function Home({ allPostsData }) {
       </Head>
       <div className="container">
         <header>
+          <img src='/8bt-sandbox-wht.png' className='sandbox' />
           <h1 className="pageTitle">
-            SAND <b>BOX</b>
+            SAND<br /><b>BOX</b>
           </h1>
         </header>
         <NavBar current='home' />
