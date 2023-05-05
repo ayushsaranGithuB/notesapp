@@ -16,7 +16,7 @@ export default function Category({ allPostsData,selectedCat }) {
       <div className="container">
         <header>
           <h1 className="pageTitle">
-            #{selectedCat.toUpperCase()}
+            #{selectedCat?selectedCat.toUpperCase():''}
           </h1>
         </header>
         <NavBar current={selectedCat} />
