@@ -1,7 +1,9 @@
 @media (max-width: 768px) {
 
     .container{
-        min-width:330px
+        min-width:330px;
+        padding:40px;
+        margin-top:0;
     }
 
     h1.pageTitle {  
@@ -19,12 +21,26 @@
     }
 
     nav{
-            top: 20px;
-    right: 20px;
+        top:20px;
+        right:20px;
+    }
+
+    .singleNote nav{
+        top: 0;
+        right: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .singleNote nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0 10px;
     }
 
     .link{
-        width: 50%;
+        width: 100%;
+        max-width: 225px;
     }
 
     .link span.title {
@@ -33,6 +49,10 @@
 
     header {
         flex-wrap: wrap;
+    }
+
+    .noteText {
+        width: 100%;
     }
 
 }

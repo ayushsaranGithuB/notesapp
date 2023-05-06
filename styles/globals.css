@@ -223,10 +223,15 @@ nav ul li a:hover {
   padding: 100px;
 }
 
+.singleNote header{
+  flex-direction: column;
+}
+
 .singleNote h1.pageTitle {
   font-size: 4rem;
   width: 75%;
-  margin-bottom: 50px;
+  margin:20px 0 50px 0;
+  word-break: break-all;
 }
 
 .noteText {
