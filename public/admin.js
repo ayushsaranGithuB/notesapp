@@ -1,0 +1,1 @@
+document.onkeyup = function(event) {if (event.keyCode === 27){window.location = 'https://vercel.com/ayushsarangithub/dev-notes-app'}}
