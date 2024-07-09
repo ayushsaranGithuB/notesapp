@@ -1,3 +1,9 @@
+---
+title: "Building A SimpleNote to Obsidian notes converter"
+date: "7/24"
+category: "JS"
+---
+
 # Building A SimpleNote to Obsidian notes converter
 
 # See it in action:
