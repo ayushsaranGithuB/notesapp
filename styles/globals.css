@@ -20,14 +20,14 @@ body {
 }
 
 .container {
-    border: 1px solid #475243;
-    border-radius: 4px;
-    margin: 5% auto;
-    padding: 6%;
-    position: relative;
-    max-width: 1000px;
-    box-shadow: 0px 0px 5px 1px #446c2126;
-    min-height: 78vh;
+  border: 1px solid #475243;
+  border-radius: 4px;
+  margin: 5% auto;
+  padding: 6%;
+  position: relative;
+  max-width: 1000px;
+  box-shadow: 0px 0px 5px 1px #446c2126;
+  min-height: 78vh;
 }
 
 header {
@@ -38,25 +38,26 @@ header {
 
 h1.pageTitle {
   font-family: var(--fontMono);
-  font-size: min(5rem + 1vw,7rem);
-    max-width: 30rem;
+  font-size: min(5rem + 1vw, 7rem);
+  max-width: 30rem;
   line-height: 1em;
-  margin: 50px 0 150px 20px;  
+  margin: 50px 0 150px 20px;
 }
-  h1.pageTitle b{
-    font-size: 1.3em;
-  }
 
-  img.sandbox{
-    display: block;
-    width: clamp(60px,15rem,200px);
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border: 9px solid #fff;
-    padding: 1em;
-    margin-top: 72px;  
-    border-radius: 3px;
-  }
+h1.pageTitle b {
+  font-size: 1.3em;
+}
+
+img.sandbox {
+  display: block;
+  width: clamp(60px, 15rem, 200px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 9px solid #fff;
+  padding: 1em;
+  margin-top: 72px;
+  border-radius: 3px;
+}
 
 .postGrid {
   display: flex;
@@ -68,7 +69,7 @@ h1.pageTitle {
   border: 1px solid #666;
   padding: 30px;
   overflow: hidden;
-  width: clamp(200px,30%,350px);
+  width: clamp(200px, 30%, 350px);
   aspect-ratio: 1/1;
   background-color: var(--backgroundDarker);
   display: flex;
@@ -87,8 +88,8 @@ h1.pageTitle {
 }
 
 .link span.title {
-  font-size: clamp(22px,3vw,32px);
-    word-wrap: break-word;
+  font-size: clamp(22px, 3vw, 32px);
+  word-wrap: break-word;
   font-family: var(--fontPrimary);
   margin-bottom: 5px;
   color: var(--foreground);
@@ -96,6 +97,7 @@ h1.pageTitle {
   margin-left: -4px;
   display: block;
 }
+
 span.title:hover {
   transition: .6s;
   background-color: var(--highlightColor);
@@ -223,14 +225,14 @@ nav ul li a:hover {
   padding: 100px;
 }
 
-.singleNote header{
+.singleNote header {
   flex-direction: column;
 }
 
 .singleNote h1.pageTitle {
   font-size: 4rem;
   width: 75%;
-  margin:20px 0 50px 0;
+  margin: 20px 0 50px 0;
   word-break: break-all;
 }
 
@@ -238,6 +240,11 @@ nav ul li a:hover {
   font-size: 18px;
   width: 80%;
   line-height: 26px;
+}
+
+.noteText img {
+  max-width: 100%;
+  height: auto;
 }
 
 .singleNote .note .meta {
@@ -248,12 +255,12 @@ nav ul li a:hover {
   font-family: var(--fontMono);
 }
 
-.errorPage{
+.errorPage {
   text-align: center;
   margin: 100px;
-    padding: 100px;
+  padding: 100px;
 }
 
-.errorPage h1{
+.errorPage h1 {
   font-size: 12em;
 }
