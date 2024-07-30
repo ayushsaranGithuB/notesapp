@@ -230,10 +230,8 @@ nav ul li a:hover {
 }
 
 .singleNote h1.pageTitle {
-  font-size: 4rem;
-  width: 75%;
+  font-size: 3rem;
   margin: 20px 0 50px 0;
-  word-break: break-all;
 }
 
 .noteText {
@@ -263,4 +261,11 @@ nav ul li a:hover {
 
 .errorPage h1 {
   font-size: 12em;
+}
+
+pre {
+  background: #282c34;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
 }
